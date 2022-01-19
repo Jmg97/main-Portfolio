@@ -1,0 +1,269 @@
+@import url(reset.css);
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap");
+
+html {
+  font-family: "Noto Sans KR", sans-serif;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+body {
+  background: (
+    linear,
+    left top,
+    left bottom,
+    (15%, #dbe9f6),
+    (44%, #fefcc9),
+    (#f7d0d5)
+  );
+  background: linear-gradient(180deg, #dbe9f6 15%, #fefcc9 44%, #f7d0d5 100%);
+}
+header {
+  width: 100%;
+}
+nav {
+  width: 1200px;
+  height: 4rem;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 0 10px;
+}
+nav > ul {
+  display: flex;
+  justify-content: space-between;
+  width: 30%;
+}
+
+nav > p {
+  font-size: 25px;
+  color: #71787d;
+}
+nav li {
+  color: #71787d;
+}
+main {
+  width: 100%;
+}
+.about {
+  width: 1200px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.about-title {
+  margin: 30px 0;
+  border-bottom: 1px solid #666;
+}
+.about-title > h1 {
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.about-info {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.about-info > div {
+  width: 33.3333%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.about-info h1 {
+  font-size: 25px;
+  font-weight: 600;
+}
+.about-info p {
+  font-size: 20px;
+}
+
+.about-info div:nth-child(1),
+.about-info :nth-child(2),
+.about-info :nth-child(3) {
+  margin: 20px 0;
+}
+
+.main-arc {
+  width: 100%;
+  margin: 60px 0;
+}
+.Archiving {
+  width: 1200px;
+  margin: auto;
+}
+.wrap {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.archiving-title {
+  display: flex;
+  justify-content: center;
+}
+
+.archiving-title > h1 {
+  font-size: 40px;
+  font-weight: 600;
+  border-bottom: 1px solid #666;
+  margin: 40px 0;
+}
+
+.git {
+  width: 26rem;
+  height: 20rem;
+  box-sizing: border-box;
+  padding: 40px 80px;
+  background: rgb(127, 171, 252);
+  background: linear-gradient(
+    180deg,
+    rgba(127, 171, 252, 1) 0%,
+    rgba(142, 213, 253, 1) 0%,
+    rgba(126, 231, 253, 1) 0%,
+    rgba(230, 228, 228, 0.28335084033613445) 0%,
+    rgba(186, 186, 186, 0.2777485994397759) 100%,
+    rgba(254, 198, 8, 1) 100%,
+    rgba(254, 186, 37, 1) 100%,
+    rgba(253, 178, 60, 1) 100%
+  );
+  border-radius: 20px;
+}
+
+.git > h1 {
+  font-size: 40px;
+  margin: 15px 0;
+}
+
+.git > p {
+  font-size: 20px;
+  margin: 15px 0;
+}
+.git li {
+  list-style: square;
+  margin-bottom: 10px;
+}
+
+.tistory {
+  width: 26rem;
+  height: 20rem;
+  box-sizing: border-box;
+  padding: 40px 80px;
+  background: rgb(127, 171, 252);
+  background: linear-gradient(
+    180deg,
+    rgba(127, 171, 252, 1) 0%,
+    rgba(142, 213, 253, 1) 0%,
+    rgba(126, 231, 253, 1) 0%,
+    rgba(230, 228, 228, 0.28335084033613445) 0%,
+    rgba(186, 186, 186, 0.2777485994397759) 100%,
+    rgba(254, 198, 8, 1) 100%,
+    rgba(254, 186, 37, 1) 100%,
+    rgba(253, 178, 60, 1) 100%
+  );
+  border-radius: 20px;
+}
+
+.tistory > h1 {
+  font-size: 40px;
+  margin: 15px 0;
+}
+
+.tistory > p {
+  font-size: 17px;
+  margin: 15px 0;
+}
+
+.tistory li {
+  list-style: square;
+  margin-bottom: 10px;
+}
+
+.work {
+  width: 100%;
+}
+.work-wrap {
+  width: 1200px;
+  margin: auto;
+}
+
+.work-title {
+  display: flex;
+  justify-content: center;
+}
+
+.work-title > h1 {
+  font-size: 40px;
+  font-weight: 600;
+  border-bottom: 1px solid #666;
+}
+
+.work-wrap {
+  width: 1200px;
+  margin: auto;
+}
+
+.work-one {
+  height: 360px;
+  display: flex;
+  background: rgb(127, 171, 252);
+  background: linear-gradient(
+    180deg,
+    rgba(127, 171, 252, 1) 0%,
+    rgba(142, 213, 253, 1) 0%,
+    rgba(126, 231, 253, 1) 0%,
+    rgba(230, 228, 228, 0.28335084033613445) 0%,
+    rgba(186, 186, 186, 0.2777485994397759) 100%,
+    rgba(254, 198, 8, 1) 100%,
+    rgba(254, 186, 37, 1) 100%,
+    rgba(253, 178, 60, 1) 100%
+  );
+  border-radius: 20px;
+  align-items: center;
+}
+
+.work-img_one {
+  margin: 0 100px;
+}
+
+.work-one_txt {
+  margin-bottom: 20px;
+}
+
+.work-one_txt > h1 {
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 40px;
+}
+.work-one_txt > p {
+  font-size: 20px;
+}
+
+button {
+  width: 100px;
+  height: 34px;
+  border-radius: 16px;
+  margin-top: 40px;
+  color: #fff;
+  background: rgb(127, 171, 252);
+  background: linear-gradient(
+    90deg,
+    rgba(127, 171, 252, 1) 0%,
+    rgba(142, 213, 253, 1) 0%,
+    rgba(126, 231, 253, 1) 0%,
+    rgba(90, 182, 237, 1) 0%,
+    rgba(93, 166, 232, 1) 0%,
+    rgba(91, 218, 255, 1) 100%,
+    rgba(254, 198, 8, 1) 100%,
+    rgba(254, 186, 37, 1) 100%,
+    rgba(253, 178, 60, 1) 100%
+  );
+  border: none;
+  font-size: 17px;
+  cursor: pointer;
+}
