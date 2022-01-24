@@ -12,21 +12,29 @@
       integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
       crossorigin="anonymous"
     />
+  
   </head>
   <body>
     <header>
-      <nav>
+      <nav id="menu">
+        <div class="nav_menu">
         <p>JMG Portfolio</p>
         <ul>
           <li><a href="#">HOME</a></li>
-          <li>Profile</li>
-          <li>Archiving</li>
-          <li>Work</li>
+          <li><a href="#">Profile</a></li>
+          <li><a href="#">Archiving</a></li>
+          <li><a href="#">Work</a></li>
         </ul>
+      </div>
       </nav>
-      <div></div>
     </header>
     <main>
+      <div class="home">
+         <div>
+           <h1>Better to Better</h1>
+           <p>항상 최선을 다하는 개발자</p>
+         </div>
+      </div>
       <div class="about">
         <div class="about-title">
           <h1>PROFILE</h1>
@@ -66,7 +74,7 @@
           <div class="wrap">
             <div class="git">
               <h1><i class="fab fa-github-square"></i>GitHub</h1>
-              <p>https://github.com/Jmg97</p>
+              <p><a href="https://github.com/Jmg97">https://github.com/Jmg97</a></p>
               <p>코드 저장소 입니다.</p>
               <ul>
                 <li>프로젝트들의 소스 코드</li>
@@ -75,7 +83,7 @@
             </div>
             <div class="tistory">
               <h1><i class="fab fa-blogger"></i>TISTORY</h1>
-              <p><a href="#">https://jmg12.tistory.com/</a></p>
+              <p><a href="https://jmg12.tistory.com/">https://jmg12.tistory.com/</a></p>
               <p>공부 및 기록용 블로그 입니다.</p>
               <ul>
                 <li>공부한 것을 복습하기 위해 기록</li>
@@ -91,20 +99,57 @@
           <div class="work-title">
             <h1>Work</h1>
           </div>
-          <div class="work-one">
-            <div class="work-img_one"><img src="image/work1.jpg" /></div>
-            <div class="work-one_txt">
+          <div class="work-box">
+            <div class="work-img">
+              <a href="https://jmg97.github.io/salady/">
+              <img src="./image/work1.jpg" />
+            </a>
+            </div>
+            <div class="work_txt">
               <h1>샐러디 홈페이지 리뉴얼</h1>
               <p>사용 언어 : HTML,CSS,JS</p>
               <br />
               <p>주요 기능 : 이미지 슬라이드,반응형 웹페이지</p>
               <br />
               <p>참여도 : 100%</p>
-              <button>VIEW</button>
+              <button><a href="https://jmg97.github.io/salady/">VIEW</a></button>
+            </div>
+          </div>
+          <div class="work-box">
+            <div class="work-img">
+              <a href="https://jmg97.github.io/mediaJs/">
+              <img src="./image/work2.png" />
+            </a>
+            </div>
+            <div class="work_txt">
+              <h1>나만의 웹사이트 제작</h1>
+              <p>사용 언어 : HTML,CSS,JS</p>
+              <br />
+              <p>주요 기능 : 실시간 날씨, 시계, 투두리스트, 반응형 웹페이지 </p>
+              <br />
+              <p>참여도 : 100%</p>
+              <button><a href="https://jmg97.github.io/mediaJs/">VIEW</a></button>
+            </div>
+          </div>
+          <div class="work-box">
+            <div class="work-img">
+              <a href="https://jmg97.github.io/plane_portfolio/">
+              <img src="./image/work3.png" />
+            </a>
+            </div>
+            <div class="work_txt">
+              <h1>카카오톡 클론코딩</h1>
+              <p>사용 언어 : HTML,CSS</p>
+              <br />
+              <p>주요 기능 : 그라데이션 애니메이션, 미디어쿼리(모바일용) </p>
+              <br />
+              <p>참여도 : 100%</p>
+              <button><a href="https://jmg97.github.io/plane_portfolio/">VIEW</a></button>
             </div>
           </div>
         </div>
       </section>
     </main>
+    <script src="script.js"></script>
   </body>
 </html>

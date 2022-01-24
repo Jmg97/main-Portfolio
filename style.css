@@ -22,7 +22,41 @@ body {
 header {
   width: 100%;
 }
-nav {
+#menu{
+width: 100%;
+  position: fixed;
+  z-index: 99;
+}
+.home{
+  width: 100%;
+  padding: 10rem 0;
+}
+.home > div{
+  width: 1200px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.home h1{
+  font-size: 80px;
+  padding: 3rem 0;
+}
+
+.home p {
+font-size: 40px;
+padding: 3rem 0;
+
+}
+
+.nav_fixed{
+  height: 4rem;
+  background-color: #fff;
+}
+
+.nav_menu {
   width: 1200px;
   height: 4rem;
   margin: auto;
@@ -32,17 +66,17 @@ nav {
   box-sizing: border-box;
   padding: 0 10px;
 }
-nav > ul {
+.nav_menu > ul {
   display: flex;
   justify-content: space-between;
   width: 30%;
 }
 
-nav > p {
+.nav_menu > p {
   font-size: 25px;
   color: #71787d;
 }
-nav li {
+.nav_menu li {
   color: #71787d;
 }
 main {
@@ -208,7 +242,7 @@ main {
   margin: auto;
 }
 
-.work-one {
+.work-box {
   height: 360px;
   display: flex;
   background: rgb(127, 171, 252);
@@ -225,45 +259,71 @@ main {
   );
   border-radius: 20px;
   align-items: center;
+  margin-top: 30px;
 }
 
-.work-img_one {
+.work-img{
   margin: 0 100px;
 }
 
-.work-one_txt {
+
+
+
+.work-box img{
+  box-sizing: border-box;
+  border-radius: 16px;
+}
+
+.work_txt {
   margin-bottom: 20px;
 }
 
-.work-one_txt > h1 {
+.work_txt > h1 {
   font-size: 30px;
   font-weight: 600;
   margin-bottom: 40px;
 }
-.work-one_txt > p {
+.work_txt > p {
   font-size: 20px;
 }
 
 button {
+  background: #b621fe;
+  border: none;
+  z-index: 1;
   width: 100px;
   height: 34px;
   border-radius: 16px;
-  margin-top: 40px;
-  color: #fff;
-  background: rgb(127, 171, 252);
-  background: linear-gradient(
-    90deg,
-    rgba(127, 171, 252, 1) 0%,
-    rgba(142, 213, 253, 1) 0%,
-    rgba(126, 231, 253, 1) 0%,
-    rgba(90, 182, 237, 1) 0%,
-    rgba(93, 166, 232, 1) 0%,
-    rgba(91, 218, 255, 1) 100%,
-    rgba(254, 198, 8, 1) 100%,
-    rgba(254, 186, 37, 1) 100%,
-    rgba(253, 178, 60, 1) 100%
-  );
-  border: none;
   font-size: 17px;
   cursor: pointer;
+  position: relative;
+  margin-top: 40px;
+  color: #fff;
 }
+button:after {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 100%;
+  top: 0;
+  right: 0;
+  z-index: -1;
+  background-color: #663dff;
+  border-radius: 16px;
+   box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+   7px 7px 20px 0px rgba(0,0,0,.1),
+   4px 4px 5px 0px rgba(0,0,0,.1);
+  transition: all 0.3s ease;
+}
+button:hover {
+  color: #fff;
+}
+button:hover:after {
+  left: 0;
+  width: 100%;
+}
+button:active {
+  top: 2px;
+}
+
+
