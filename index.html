@@ -12,30 +12,36 @@
       integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
       crossorigin="anonymous"
     />
-  
   </head>
   <body>
     <header>
       <nav id="menu">
         <div class="nav_menu">
-        <p>JMG Portfolio</p>
-        <ul>
-          <li><a href="#">HOME</a></li>
-          <li><a href="#">Profile</a></li>
-          <li><a href="#">Archiving</a></li>
-          <li><a href="#">Work</a></li>
-        </ul>
-      </div>
+          <a href="#home"><p>JMG Portfolio</p></a>
+          <ul>
+            <a href="#home"><li>Home</li></a>
+            <a href="#about"><li>Profile</li></a>
+            <a href="#main-arc"><li>Archiving</li></a>
+            <a href="#work"><li>Work</li></a>
+          </ul>
+        </div>
       </nav>
     </header>
     <main>
-      <div class="home">
-         <div>
-           <h1>Better to Better</h1>
-           <p>항상 최선을 다하는 개발자</p>
-         </div>
+      <div class="home" id="home">
+        <div>
+          <h1>Better to Better.</h1>
+          <p>항상 최선을 다하는 퍼블리셔</p>
+          <button
+            type="button"
+            class="main-btn"
+            onclick="location.href='index.html#work'"
+          >
+            see my work
+          </button>
+        </div>
       </div>
-      <div class="about">
+      <div class="about" id="about">
         <div class="about-title">
           <h1>PROFILE</h1>
         </div>
@@ -66,45 +72,65 @@
           </div>
         </div>
       </div>
-      <section class="main-arc">
-        <div class="Archiving">
+      <section class="main-arc" id="main-arc">
+        <div class="archiving">
           <div class="archiving-title">
             <h1>ARCHIVING</h1>
           </div>
           <div class="wrap">
-            <div class="git">
-              <h1><i class="fab fa-github-square"></i>GitHub</h1>
-              <p><a href="https://github.com/Jmg97">https://github.com/Jmg97</a></p>
-              <p>코드 저장소 입니다.</p>
-              <ul>
-                <li>프로젝트들의 소스 코드</li>
-                <li>코딩 공부 기록</li>
-              </ul>
+            <div>
+              <a href="https://github.com/Jmg97">
+                <div class="git">
+                  <div class="text-box">
+                    <h1><i class="fab fa-github-square"></i>GitHub</h1>
+                    <p>https://github.com/Jmg97</p>
+                    <p>코드 저장소 입니다.</p>
+                    <ul>
+                      <li>프로젝트들의 소스 코드</li>
+                      <li>코딩 공부 기록</li>
+                    </ul>
+                  </div>
+                </div>
+              </a>
             </div>
-            <div class="tistory">
-              <h1><i class="fab fa-blogger"></i>TISTORY</h1>
-              <p><a href="https://jmg12.tistory.com/">https://jmg12.tistory.com/</a></p>
-              <p>공부 및 기록용 블로그 입니다.</p>
-              <ul>
-                <li>공부한 것을 복습하기 위해 기록</li>
-                <li>개발자로써 부족한 지식 정리</li>
-                <li>목표를 위한 기록 습관화</li>
-              </ul>
+
+            <div>
+              <a href="https://jmg12.tistory.com/">
+                <div class="tistory">
+                  <div class="text-box">
+                    <h1><i class="fab fa-blogger"></i>TISTORY</h1>
+                    <p>https://jmg12.tistory.com/</p>
+                    <p>공부 및 기록용 블로그 입니다.</p>
+                    <ul>
+                      <li>공부한 것을 복습하기 위해 기록</li>
+                      <li>개발자로써 부족한 지식 정리</li>
+                      <li>목표를 위한 기록 습관화</li>
+                    </ul>
+                  </div>
+                </div>
+              </a>
             </div>
           </div>
         </div>
       </section>
-      <section class="work">
+      <section class="work" id="work">
         <div class="work-wrap">
           <div class="work-title">
             <h1>Work</h1>
           </div>
           <div class="work-box">
-            <div class="work-img">
-              <a href="https://jmg97.github.io/salady/">
+            <a
+              href="https://github.com/Jmg97/salady/tree/gh-pages"
+              class="work-thumbnail"
+            >
+              <div class="work-img">
+                <span class="work-img_text">
+                  <p>GitHub 페이지로 가기</p>
+                  <i class="fas fa-location-arrow"></i>
+                </span>
+              </div>
               <img src="./image/work1.jpg" />
             </a>
-            </div>
             <div class="work_txt">
               <h1>샐러디 홈페이지 리뉴얼</h1>
               <p>사용 언어 : HTML,CSS,JS</p>
@@ -112,44 +138,79 @@
               <p>주요 기능 : 이미지 슬라이드,반응형 웹페이지</p>
               <br />
               <p>참여도 : 100%</p>
-              <button><a href="https://jmg97.github.io/salady/">VIEW</a></button>
+              <a href="https://jmg97.github.io/salady/">
+                <button type="button">VIEW</button>
+              </a>
             </div>
           </div>
           <div class="work-box">
-            <div class="work-img">
-              <a href="https://jmg97.github.io/mediaJs/">
+            <a
+              href="https://github.com/Jmg97/mediaJs/tree/gh-pages"
+              class="work-thumbnail"
+            >
+              <div class="work-img">
+                <span class="work-img_text">
+                  <p>GitHub 페이지로 가기</p>
+                  <i class="fas fa-location-arrow"></i>
+                </span>
+              </div>
               <img src="./image/work2.png" />
             </a>
-            </div>
             <div class="work_txt">
               <h1>나만의 웹사이트 제작</h1>
               <p>사용 언어 : HTML,CSS,JS</p>
               <br />
-              <p>주요 기능 : 실시간 날씨, 시계, 투두리스트, 반응형 웹페이지 </p>
+              <p>주요 기능 : 실시간 날씨, 시계, 투두리스트, 반응형 웹페이지</p>
               <br />
               <p>참여도 : 100%</p>
-              <button><a href="https://jmg97.github.io/mediaJs/">VIEW</a></button>
+              <a href="https://jmg97.github.io/mediaJs/">
+                <button>VIEW</button>
+              </a>
             </div>
           </div>
           <div class="work-box">
-            <div class="work-img">
-              <a href="https://jmg97.github.io/plane_portfolio/">
+            <a
+              href="https://github.com/Jmg97/plane_portfolio/tree/gh-pages"
+              class="work-thumbnail"
+            >
+              <div class="work-img">
+                <span class="work-img_text">
+                  <p>GitHub 페이지로 가기</p>
+                  <i class="fas fa-location-arrow"></i>
+                </span>
+              </div>
               <img src="./image/work3.png" />
             </a>
-            </div>
+
             <div class="work_txt">
               <h1>카카오톡 클론코딩</h1>
               <p>사용 언어 : HTML,CSS</p>
               <br />
-              <p>주요 기능 : 그라데이션 애니메이션, 미디어쿼리(모바일용) </p>
+              <p>주요 기능 : 그라데이션 애니메이션, 미디어쿼리(모바일용)</p>
               <br />
               <p>참여도 : 100%</p>
-              <button><a href="https://jmg97.github.io/plane_portfolio/">VIEW</a></button>
+              <a href="https://jmg97.github.io/plane_portfolio/">
+                <button>VIEW</button>
+              </a>
             </div>
           </div>
         </div>
       </section>
     </main>
+    <footer>
+      <div class="icon-box">
+        <a href="https://github.com/Jmg97"><i class="fab fa-github-square"></i></a>
+        <a href="https://jmg12.tistory.com/"><i class="fab fa-blogger"></i></a>
+        </div>
+        <div class="footer-txt">
+          <p>
+            본 페이지는 상업적 목적이 아닌 개인 포트폴리오용으로
+            제작되었습니다.<br />
+            ©2022 JI MINGOO.All Right Reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
     <script src="script.js"></script>
   </body>
 </html>
