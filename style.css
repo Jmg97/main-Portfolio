@@ -66,6 +66,7 @@ header {
 }
 .home {
   width: 100%;
+  margin: auto;
   padding: 10rem 0;
 }
 .home > div {
@@ -99,8 +100,11 @@ header {
 
 .main-btn {
   margin: auto;
-  width: 8rem;
-  height: 3rem;
+  width: 20rem;
+  height: 5rem;
+  border-radius: 2rem;
+  font-size: 1.5rem;
+  font-family: "NEXON Lv2 Gothic Bold";
   background: #9759bb;
   background: linear-gradient(-70deg, #9759bb 20%, #fca6c6 60%, #f6af97 80%);
 }
@@ -115,6 +119,10 @@ header {
   background-color: #fff;
 }
 
+.menu-check {
+  display: none;
+  z-index: 99;
+}
 .nav_menu {
   width: 1200px;
   height: 4rem;
@@ -135,7 +143,7 @@ header {
 }
 .nav_menu p {
   font-family: "NEXON Lv2 Gothic Bold";
-  font-size: 25px;
+  font-size: 1.5rem;
   color: #71787d;
   cursor: pointer;
 }
@@ -147,11 +155,18 @@ header {
   color: #71787d;
   font-family: "NEXON Lv2 Gothic Bold";
 }
+label {
+  position: absolute;
+  right: 1rem;
+  cursor: pointer;
+  display: none;
+  z-index: 99;
+}
 main {
   width: 100%;
 }
 .about {
-  width: 1200px;
+  width: 100%;
   margin: auto;
   display: flex;
   flex-direction: column;
@@ -164,12 +179,13 @@ main {
   border-bottom: 1px solid #666;
 }
 .about-title > h1 {
-  font-size: 40px;
+  font-family: "SBAggroB";
+  font-size: 2.5rem;
   font-weight: 600;
 }
 
 .about-info {
-  width: 100%;
+  width: 1200px;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -183,17 +199,17 @@ main {
   align-items: center;
 }
 .about-info h1 {
-  font-size: 25px;
+  font-size: 1.5rem;
   font-weight: 600;
 }
 .about-info p {
-  font-size: 20px;
+  font-size: 1.5rem;
 }
 
 .about-info div:nth-child(1),
 .about-info :nth-child(2),
 .about-info :nth-child(3) {
-  margin: 20px 0;
+  margin: 1.5rem 0;
 }
 
 .main-arc {
@@ -202,26 +218,30 @@ main {
   padding: 6rem 0;
 }
 .archiving {
-  width: 1200px;
+  width: 100%;
   margin: auto;
 }
 .wrap {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   box-sizing: border-box;
-  padding: 2rem;
+  padding: 2rem 0;
 }
-
+.wrap > div {
+  width: 25rem;
+  margin: 0 10rem;
+}
 .archiving-title {
   display: flex;
   justify-content: center;
   box-sizing: border-box;
-  padding: 2rem;
+  padding: 2rem 0;
 }
 
 .archiving-title > h1 {
-  font-size: 40px;
+  font-size: 2.5rem;
   font-weight: 600;
+  font-family: "SBAggroB";
   border-bottom: 1px solid #666;
   margin: 40px 0;
 }
@@ -229,23 +249,22 @@ main {
 .git {
   width: 26rem;
   height: 20rem;
-  box-sizing: border-box;
-  padding: 40px 80px;
   background: linear-gradient(
     0deg,
     rgba(255, 255, 255, 0.5),
     rgba(255, 255, 255, 0.1)
   );
-  border-radius: 20px;
+  border-radius: 2rem;
+  margin: auto;
 }
 
 .git > h1 {
-  font-size: 40px;
+  font-size: 2rem;
   margin: 15px 0;
 }
 
 .git > p {
-  font-size: 20px;
+  font-size: 1rem;
   margin: 15px 0;
 }
 .git li {
@@ -256,30 +275,39 @@ main {
 .tistory {
   width: 26rem;
   height: 20rem;
-  box-sizing: border-box;
-  padding: 40px 80px;
+
   background: linear-gradient(
     0deg,
     rgba(255, 255, 255, 0.5),
     rgba(255, 255, 255, 0.1)
   );
-  border-radius: 20px;
+  border-radius: 2rem;
   border: 1px solid #fff;
+  margin: auto;
 }
-
+.git > a {
+  width: 100%;
+}
+.text-box {
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  box-sizing: border-box;
+  padding: 3rem;
+}
 .text-box > h1 {
-  font-size: 40px;
-  margin: 15px 0;
+  font-size: 2rem;
+  line-height: 2rem;
 }
 
 .text-box > p {
-  font-size: 17px;
-  margin: 30px 0;
+  font-size: 1.2rem;
+  line-height: 3rem;
 }
 
 .text-box li {
   list-style: square;
-  margin-bottom: 10px;
+  line-height: 2rem;
 }
 
 .work {
@@ -288,7 +316,7 @@ main {
   padding: 6rem 0;
 }
 .work-wrap {
-  width: 1200px;
+  width: 100%;
   margin: auto;
 }
 
@@ -300,18 +328,20 @@ main {
 }
 
 .work-title > h1 {
-  font-size: 40px;
+  font-family: "SBAggroB";
+  font-size: 2.5rem;
   font-weight: 600;
   border-bottom: 1px solid #666;
 }
 
 .work-wrap {
-  width: 1200px;
+  width: 100%;
   margin: auto;
 }
 
 .work-box {
-  height: 24rem;
+  width: 1200px;
+  padding: 3rem 0;
   display: flex;
   background: rgb(127, 171, 252);
   background: linear-gradient(
@@ -319,15 +349,15 @@ main {
     rgba(255, 255, 255, 0.5),
     rgba(255, 255, 255, 0.1)
   );
-  border-radius: 20px;
+  border-radius: 2rem;
   align-items: center;
   justify-content: space-evenly;
-  margin: 4rem 0;
+  margin: 4rem auto;
   border: 1px solid #fff;
 }
 .work-thumbnail {
   width: 25rem;
-  height: 15rem;
+  height: 18rem;
   vertical-align: middle;
   position: relative;
 }
@@ -337,7 +367,7 @@ main {
   height: 100%;
   background-color: rgba(2, 37, 59, 0.95);
   position: absolute;
-  border-radius: 16px;
+  border-radius: 2rem;
   opacity: 0;
 }
 .work-img:hover {
@@ -354,7 +384,7 @@ main {
 
 .work-thumbnail img {
   box-sizing: border-box;
-  border-radius: 16px;
+  border-radius: 2rem;
   width: 100%;
   height: 100%;
 }
@@ -365,12 +395,12 @@ main {
 }
 
 .work_txt > h1 {
-  font-size: 30px;
+  font-size: 2rem;
   font-weight: 600;
   margin-bottom: 40px;
 }
 .work_txt > p {
-  font-size: 20px;
+  font-size: 1rem;
 }
 
 button {
@@ -379,7 +409,7 @@ button {
   z-index: 1;
   width: 100px;
   height: 34px;
-  border-radius: 16px;
+  border-radius: 2rem;
   font-size: 17px;
   cursor: pointer;
   position: relative;
@@ -395,7 +425,7 @@ button:after {
   right: 0;
   z-index: -1;
   background-color: #663dff;
-  border-radius: 16px;
+  border-radius: 2rem;
   box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
     7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease;
@@ -415,7 +445,7 @@ footer {
   height: 8rem;
 }
 .icon-box {
-  width: 1200px;
+  width: 100%;
   margin: auto;
   display: flex;
   justify-content: center;
@@ -427,9 +457,117 @@ footer {
   margin: 0 1rem;
 }
 .footer-txt {
-  width: 1200px;
+  width: 100%;
   margin: auto;
   display: flex;
   justify-content: center;
   text-align: center;
+}
+
+@media screen and (max-width: 1200px) {
+  html {
+    font-size: 80%;
+  }
+  .nav_menu {
+    width: auto;
+  }
+  .home > div {
+    width: auto;
+  }
+  .work-box {
+    width: auto;
+    margin: 2rem;
+  }
+  .about-info {
+    width: auto;
+  }
+
+  .wrap {
+    flex-wrap: wrap;
+  }
+
+  .wrap > div {
+    width: 100%;
+    margin: 2rem 0;
+  }
+  .tistory,
+  .git {
+    width: 40rem;
+    text-align: center;
+  }
+  .tistory ul,
+  .git ul {
+    width: 50%;
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 757px) {
+  html {
+    font-size: 70%;
+  }
+  .work-box {
+    display: flex;
+    flex-direction: column;
+    margin: 1.5rem;
+  }
+  .work_txt {
+    margin: 3rem 0;
+    text-align: center;
+    font-size: 30%;
+  }
+  .work_txt > p {
+    font-size: 1.5rem;
+  }
+  label {
+    display: block;
+    font-size: 2rem;
+  }
+  .menu-close > i {
+    display: none;
+  }
+  .menu-open,
+  .menu-close {
+    width: 10rem;
+    height: 10rem;
+  }
+  .nav_menu > ul {
+    visibility: hidden;
+    opacity: 0;
+    overflow: hidden;
+    position: fixed;
+    transition: all 0.4s ease-in-out;
+    top: -1rem;
+    right: 0;
+    width: 100%;
+    padding-top: 7rem;
+    background-color: #fff;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    z-index: 1;
+  }
+  .menu-check:checked ~ .head-menu {
+    visibility: visible;
+    opacity: 0.9;
+    height: 120vh;
+  }
+  .menu-check:checked ~ .menu-toggle .menu-close {
+    display: block;
+  }
+  .menu-check:checked ~ .menu-toggle .menu-open {
+    display: none;
+  }
+}
+@media screen and (max-width: 480px) {
+  html {
+    font-size: 50%;
+  }
+
+  .work_txt > p {
+    font-size: 1.75rem;
+  }
+  .about-info > div {
+    width: 50%;
+  }
 }
