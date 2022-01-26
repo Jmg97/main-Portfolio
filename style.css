@@ -536,7 +536,7 @@ footer {
     opacity: 0;
     overflow: hidden;
     position: fixed;
-    transition: all 0.4s ease-in-out;
+
     top: -1rem;
     right: 0;
     width: 100%;
