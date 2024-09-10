@@ -1,0 +1,9 @@
+{
+  "devDependencies": {
+    "gh-pages": "^6.1.1"
+  },
+  "homepage": "https://jmg97.github.io/main-Portfolio/",
+  "scripts": {
+    "deploy": "gh-pages -d dist"
+  }
+}
