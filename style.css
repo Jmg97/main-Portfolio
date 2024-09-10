@@ -49,7 +49,7 @@ body {
     (#f7d0d5)
   );
   background: linear-gradient(180deg, #dbe9f6 15%, #fefcc9 44%, #f7d0d5 100%);
-  font-family: "NEXON Lv2 Gothic", sans-serif;
+  font-family: "NEXON Lv2 Gothic";
 }
 main {
   padding: 4rem 0;
@@ -123,7 +123,7 @@ header {
   display: none;
   z-index: 99;
 }
-.menu-toggle > .menu-close{
+.menu-toggle > .menu-close {
   display: none;
 }
 
@@ -159,6 +159,11 @@ header {
   color: #71787d;
   font-family: "NEXON Lv2 Gothic Bold";
 }
+
+.nav_menu > ul li::before {
+  content: none;
+}
+
 label {
   position: absolute;
   right: 1rem;
@@ -169,7 +174,8 @@ label {
 main {
   width: 100%;
 }
-.about {
+.about,
+.introduce {
   width: 100%;
   margin: auto;
   display: flex;
@@ -178,14 +184,25 @@ main {
   box-sizing: border-box;
   padding: 6rem 0;
 }
-.about-title {
+.about-title,
+.introduce-title {
   margin: 30px 0;
   border-bottom: 1px solid #666;
 }
-.about-title > h1 {
+.about-title > h1,
+.introduce-title > h1 {
   font-family: "SBAggroB";
   font-size: 2.5rem;
   font-weight: 600;
+}
+.introduce-box {
+  width: 70%;
+}
+
+.introduce-box > p {
+  line-height: 1.8;
+  font-size: 20px;
+  margin: 10px 0;
 }
 
 .about-info {
@@ -222,19 +239,10 @@ main {
   padding: 6rem 0;
 }
 .archiving {
-  width: 100%;
+  width: 70%;
   margin: auto;
 }
-.wrap {
-  display: flex;
-  justify-content: center;
-  box-sizing: border-box;
-  padding: 2rem 0;
-}
-.wrap > div {
-  width: 25rem;
-  margin: 0 10rem;
-}
+
 .archiving-title {
   display: flex;
   justify-content: center;
@@ -250,9 +258,74 @@ main {
   margin: 40px 0;
 }
 
+.wrap {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.wrap-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 30px;
+}
+
+.row-title {
+  flex-basis: 20%;
+}
+
+.row-title p {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #333;
+}
+
+.row-content {
+  flex-basis: 75%;
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  font-size: 20px;
+}
+
+.row-content p {
+  margin-bottom: 10px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+ul li {
+  font-size: 1em;
+  line-height: 1.6;
+  color: #666;
+}
+
+.wrap-row {
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 15px;
+}
+
+.wrap-row:last-child {
+  border-bottom: none;
+}
+
+ul li::before {
+  content: "•";
+  color: #3498db;
+  padding-right: 8px;
+}
+
 .git {
-  width: 26rem;
+  width: 50%;
   height: 20rem;
+  text-align: center;
   background: linear-gradient(
     0deg,
     rgba(255, 255, 255, 0.5),
@@ -302,6 +375,10 @@ main {
 .text-box > h1 {
   font-size: 2rem;
   line-height: 2rem;
+  display: flex;
+  gap: 5px;
+  justify-content: center;
+  font-weight: 700;
 }
 
 .text-box > p {
@@ -468,6 +545,11 @@ footer {
   text-align: center;
 }
 
+.wrap-row {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
 @media screen and (max-width: 1200px) {
   html {
     font-size: 80%;
@@ -487,7 +569,8 @@ footer {
   }
 
   .wrap {
-    flex-wrap: wrap;
+    display: flex;
+    flex-direction: column;
   }
 
   .wrap > div {
@@ -510,6 +593,20 @@ footer {
   html {
     font-size: 70%;
   }
+
+  .wrap-row {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .row-content {
+    flex-direction: column;
+    flex-basis: 100%;
+  }
+
+  .row-content ul {
+    margin-bottom: 15px;
+  }
   .work-box {
     display: flex;
     flex-direction: column;
@@ -530,7 +627,7 @@ footer {
   .menu-close > i {
     display: none;
   }
-  
+
   .nav_menu > ul {
     visibility: hidden;
     opacity: 0;
@@ -547,7 +644,7 @@ footer {
     justify-content: flex-start;
     z-index: 1;
   }
-  .head-menu > li{
+  .head-menu > li {
     width: 100%;
     height: 15rem;
     text-align: center;
@@ -556,7 +653,7 @@ footer {
   .head-menu a {
     font-size: 2rem;
   }
-  .head-menu a :active{
+  .head-menu a :active {
     color: #663dff;
   }
   .menu-check:checked ~ .head-menu {
@@ -582,7 +679,7 @@ footer {
   .about-info > div {
     width: 50%;
   }
-  .home  h1{
-   font-size: 10rem;
+  .home h1 {
+    font-size: 10rem;
   }
 }
